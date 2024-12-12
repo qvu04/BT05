@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./index.css">
+
+</head>
+
+<body>
+
+
+    <!-- Bài Tập 1 -->
+    <div class="modal-frame" id="frame1">
+        <div class="modal">
+            <div class="modal-inset">
+                <div class="button close" id="close1"><i class="fa fa-times"></i></div>
+
+                <div class="modal-body">
+                    <div class="component_1">
+                        <input type="text" id="diemChuan" placeholder="Điểm chuẩn" />
+                        <select name="khuvuccuaban" id="khuVuc">
+                            <option value="0">Chọn khu vực</option>
+                            <option value="2">A</option>
+                            <option value="1">B</option>
+                            <option value="0.5">C</option>
+                        </select>
+
+                        <select name="doituong" id="doiTuong">
+                            <option value="0">Chọn đối tượng </option>
+                            <option value="2.5">1</option>
+                            <option value="1.5">2</option>
+                            <option value="1">3</option>
+                        </select>
+                    </div>
+                    <div class="component_2">
+                        <input type="text" id="diemMonThuNhat" placeholder="Điểm môn thứ nhất" />
+                        <input type="text" id="diemMonThuHai" placeholder="Điểm môn thứ hai"/>
+                        <input type="text" id="diemMonThuBa"placeholder="Điểm môn thứ ba" />
+                    </div>
+                    <div>
+                        <button id="btn-ketqua" class="btn-component">Kết Quả</button>
+                        <div id="result_1" class="result"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="overlay1"></div>
+    <button class="fancy-btn open" id="btnModal1">OPEN MODAL BÀI TẬP 1</button>
+    <br><br><br>
+
+    <!-- Bài tập 2 -->
+    <div class="modal-frame" id="frame2">
+        <div class="modal">
+            <div class="modal-inset">
+                <div class="button close" id="close2"><i class="fa fa-times"></i></div>
+
+                <div class="modal-body">
+                    <div class="component_3">
+                        <div class="component_1">
+                            <input type="text" id="hoten" placeholder="Nhập họ tên">
+                            <input type="number" id="soKW" placeholder="Nhập số KW">
+                        </div>
+                        <div>
+                            <button id="btn-ketqua-2" class="btn-component">Kết Quả</button>
+                            <div id="result_2" class="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="overlay2"></div>
+    <button class="fancy-btn open" id="btnModal2">OPEN MODAL BÀI TẬP 2</button>
+    <br><br><br>
+    <!-- Bài Tập 3 -->
+    <div class="modal-frame" id="frame3">
+        <div class="modal">
+            <div class="modal-inset">
+                <div class="button close" id="close3"><i class="fa fa-times"></i></div>
+
+                <div class="modal-body">
+                    <div class="component_4">
+                        <div class="component_1">
+                            <input type="text" id="hoten1" placeholder="Nhập họ tên">
+                            <input type="number" id="thuNhapNam" placeholder="Tổng Thu Nhập Năm">
+                            <input type="text" id="nguoiPhuThuoc" placeholder="Số Người Phụ Thuộc">
+                        </div>
+                        <div>
+                            <button id="btn-ketqua-3" class="btn-component">Kết Quả</button>
+                            <div id="result_3" class="result"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="overlay3"></div>
+    <button class="fancy-btn open" id="btnModal3">OPEN MODAL BÀI TẬP 3</button>
+    <br><br><br>
+    <!-- Bài Tập 4 -->
+    <div class="modal-frame" id="frame4">
+        <div class="modal">
+            <div class="modal-inset">
+                <div class="button close" id="close4"><i class="fa fa-times"></i></div>
+
+                <div class="modal-body">
+                    <div class="component_5">
+                        <div class="component_1">
+                            <select name="Chọn loại khách hàng" id="loaiKhachHang" onchange="LoaiKhachHang()">
+                                <option value="0">Chọn Loại Khác</option>
+                                <option value="personal" id="personal">Nhà Dân</option>
+                                <option value="group" id="group">Doanh Nghiệp</option>
+                            </select>
+                            <input type="number" id="maKhachHang" placeholder="Mã khách hàng">
+                            <input type="number" id="soKenh" placeholder="Số kênh cao">
+                            <input type="number" id="soKetNoi" placeholder="Nhập số kết nối">
+                        </div>
+                        <div>
+                            <button id="btn-ketqua-4" class="btn-component">Kết Quả</button>
+                            <div id="result_4" class="result"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-overlay" id="overlay4"></div>
+    <button class="fancy-btn open" id="btnModal4">OPEN MODAL BÀI TẬP 4</button>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./index.js"></script>
+
+
+</body>
+
+</html>
